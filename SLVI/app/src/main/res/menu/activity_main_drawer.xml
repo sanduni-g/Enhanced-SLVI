@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/navhouse"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_vehicle_details"
+            android:icon="@drawable/navvehicles"
+            android:title="Vehicle Details" />
+        <item
+            android:id="@+id/nav_revenue_details"
+            android:icon="@drawable/navcredit"
+            android:title="Revenue Details" />
+        <item
+            android:id="@+id/nav_on_going"
+            android:icon="@drawable/navcar"
+            android:title="On Going Number" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/navfeedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/navcontact"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/navlogout"
+                android:title="Logout" />
+        </menu>
+
+    </item>
+</menu>

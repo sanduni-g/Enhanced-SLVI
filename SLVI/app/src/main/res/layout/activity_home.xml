@@ -1,0 +1,172 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Home"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="50dp">
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/rosepetalsvd">
+
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department of Motor Traffic"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/home_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sri Lanka"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:justificationMode="inter_word"
+            android:layout_marginRight="20dp"
+            android:text="To provide for the licencing of motor vehicles regulation of passsenger carrage services and transport of good by motor vehicles within the Western Province."/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_vehicle_details"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/car_repair_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="View Vehicle Details"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_revenue_details"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/rdicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Revenue Details"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_ongoing_details"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_white"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/ongoingicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ongoing Vehicle Number"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_profile_details"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_white"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#000"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
