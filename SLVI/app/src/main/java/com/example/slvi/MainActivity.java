@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_revenue_details) {
             Toast.makeText(getApplicationContext(), "Revenue Details", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(getApplicationContext(), ViewVehicleDetails.class);
+            Intent i = new Intent(getApplicationContext(), RevenueDetails.class);
             startActivity(i);
 
         } else if (id == R.id.nav_on_going) {
             Toast.makeText(getApplicationContext(), "On Going Number", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(getApplicationContext(), ViewVehicleDetails.class);
+            Intent i = new Intent(getApplicationContext(), OngoingVehicleNumber.class);
             startActivity(i);
 
         } else if (id == R.id.nav_feedback) {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         public void onClick(SweetAlertDialog sDialog) {
                             sDialog.dismissWithAnimation();
                             Toast.makeText(getApplicationContext(), "Thank You for Using Our Service", Toast.LENGTH_SHORT).show();
-                            Intent i = new Intent(getApplicationContext(), SignUp.class);
+                            Intent i = new Intent(getApplicationContext(), Login.class);
                             startActivity(i);
                         }
                     })

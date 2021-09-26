@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OngoingVehicleNumber">
+
+    <LinearLayout
+        android:id="@+id/ongoingUpper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/headerimage_rld">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/whiteback" />
+
+            <ImageView
+                android:id="@+id/imageView_bookmark"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ongoingvehicle_img" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bookmark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ongoing Vehicle Number"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ongoingUpper"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white">
+
+            <ImageView
+                android:id="@+id/ambulance"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ambulance" />
+
+            <TextView
+                android:id="@+id/text_ambulance"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Ambulance"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white">
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/car" />
+
+            <TextView
+                android:id="@+id/text_car"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/dual_purpose"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/bus" />
+
+            <TextView
+                android:id="@+id/text_dual_purpose"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Dual Purpose"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/cab"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/cab" />
+
+            <TextView
+                android:id="@+id/text_cab"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Cab"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/lorry"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/lorry" />
+
+            <TextView
+                android:id="@+id/text_lorry"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Lorry"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/bike"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/bike" />
+
+            <TextView
+                android:id="@+id/text_bike"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Motor Bike"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/threewheel"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/three_wheel" />
+
+            <TextView
+                android:id="@+id/text_threewheel"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Three Wheeler"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

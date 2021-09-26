@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RevenueDetails">
+
+    <LinearLayout
+        android:id="@+id/revenueUpper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/rosepetalsvd">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/whiteback" />
+
+            <ImageView
+                android:id="@+id/imageView_bookmark"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/revenue_img" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bookmark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revenue License Details"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/revenueUpper">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/vevicle_number_input"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Vehicle Number (EX: CAA-xxxx)"
+                android:inputType="text"/>
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/search" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Issued Date"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="60dp"
+                android:text=":"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/issuedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04-August-2003"
+                android:layout_marginLeft="40dp"
+                android:textColor="#696969"
+                android:layout_marginTop="60dp">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp">
+            </TextView>
+            <TextView
+                android:id="@+id/expiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04-August-2005"
+                android:layout_marginLeft="40dp"
+                android:textColor="#696969"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="License Number"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp">
+            </TextView>
+            <TextView
+                android:id="@+id/licenseNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N012544756"
+                android:layout_marginLeft="40dp"
+                android:textColor="#696969"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/dottedline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Note: Information is provided by Provincial Department of Motor Traffic"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
