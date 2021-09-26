@@ -29,7 +29,7 @@
                 android:id="@+id/imageView_bookmark"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
-                android:layout_marginLeft="90dp"
+                android:layout_marginLeft="70dp"
                 android:layout_marginTop="0dp"
                 app:srcCompat="@drawable/revenue_img" />
         </LinearLayout>
@@ -41,8 +41,7 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_marginTop="-40dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginRight="50dp"/>
+            android:layout_marginLeft="80dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:text="Issued Date"
                     android:layout_marginTop="60dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="20dp"
                     android:textColor="@color/black">
                 </TextView>
             </LinearLayout>
@@ -118,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="Expiry Date"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
                 android:textColor="@color/black">
             </TextView>
             <TextView
@@ -149,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:text="License Number"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
                 android:textColor="@color/black">
             </TextView>
             <TextView

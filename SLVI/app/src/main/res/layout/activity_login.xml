@@ -13,8 +13,7 @@
             android:id="@+id/toplay"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginRight="115dp"
-            android:layout_marginLeft="160dp"
+            android:layout_marginLeft="140dp"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
             android:orientation="vertical"
@@ -32,8 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:layout_marginLeft="130dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="120dp"
                 android:text="Sign In"
                 android:textColor="#000000"
                 android:textSize="48dp"
@@ -58,7 +56,7 @@
                 android:layout_width="160dp"
                 android:layout_height="56dp"
                 app:srcCompat="@drawable/media"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="110dp"
                 android:layout_marginTop="10dp"/>
             <RelativeLayout
                 android:layout_below= "@id/lay1454"
