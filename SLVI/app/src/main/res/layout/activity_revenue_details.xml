@@ -56,14 +56,16 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp">
             <EditText
-                android:id="@+id/vevicle_number_input"
+                android:id="@+id/vehicle_number_input"
                 android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
                 android:layout_marginRight="60dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
                 android:hint="Enter Vehicle Number (EX: CAA-xxxx)"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:textSize="15dp"/>
+
             <ImageView
                 android:id="@+id/search_icon"
                 android:layout_width="35dp"
@@ -93,16 +95,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="60dp"
                 android:text=":"
-                android:textColor="@color/black"></TextView>
+                android:textColor="@color/black" />
             <TextView
                 android:id="@+id/issuedDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="04-August-2003"
-                android:layout_marginLeft="40dp"
+                android:text=""
+                android:layout_marginLeft="30dp"
                 android:textColor="#696969"
                 android:layout_marginTop="60dp">
             </TextView>
@@ -124,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="30dp">
             </TextView>
@@ -132,8 +134,8 @@
                 android:id="@+id/expiryDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="04-August-2005"
-                android:layout_marginLeft="40dp"
+                android:text=""
+                android:layout_marginLeft="30dp"
                 android:textColor="#696969"
                 android:layout_marginTop="30dp">
             </TextView>
@@ -155,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="30dp">
             </TextView>
@@ -163,8 +165,8 @@
                 android:id="@+id/licenseNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N012544756"
-                android:layout_marginLeft="40dp"
+                android:text=""
+                android:layout_marginLeft="30dp"
                 android:textColor="#696969"
                 android:layout_marginTop="30dp">
             </TextView>

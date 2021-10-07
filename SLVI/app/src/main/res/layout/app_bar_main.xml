@@ -16,16 +16,18 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/headerhome"
             app:popupTheme="@style/Theme.SLVI.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-<!--    <include layout="@layout/activity_home" />-->
-    <ViewStub
-        android:id="@+id/layout_stub"
-        android:inflatedId="@+id/message_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.75" />
+    <include layout="@layout/activity_home"
+        android:id="@+id/parent_view"/>
+
+<!--    <ViewStub-->
+<!--        android:id="@+id/layout_stub"-->
+<!--        android:inflatedId="@+id/message_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="0.75" />-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

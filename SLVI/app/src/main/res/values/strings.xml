@@ -10,7 +10,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="sl"><a href="https://www.gov.lk/welcome.html">www.srilanka.lk</a></string>
+    <string name="mt"><a href="http://www.motortraffic.wp.gov.lk/">www.motortraffic.gov.lk</a></string>
+
 </resources>

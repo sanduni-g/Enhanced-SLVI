@@ -9,16 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SLVI">
-        <activity android:name=".RevenueDetails"
-            android:label="Revenue Details"
+        <activity android:name=".Profile"
+            android:label="Profile"
             android:theme="@style/Theme.SLVI.NoActionBar"></activity>
-        <activity android:name=".OngoingVehicleNumber"
+        <activity
+            android:name=".RevenueDetails"
+            android:label="Revenue Details"
+            android:theme="@style/Theme.SLVI.NoActionBar" />
+        <activity
+            android:name=".OngoingVehicleNumber"
             android:label="Ongoing Vehicle Number"
-            android:theme="@style/Theme.SLVI.NoActionBar"/>
-
-        <activity android:name=".Login"
+            android:theme="@style/Theme.SLVI.NoActionBar" />
+        <activity
+            android:name=".Login"
             android:label="Login"
-            android:theme="@style/Theme.SLVI.NoActionBar"/>
+            android:theme="@style/Theme.SLVI.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Feedback"
             android:label="Feedback Forum"
@@ -29,8 +40,9 @@
             android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:label="Home"
+            android:label="MainActivity"
             android:theme="@style/Theme.SLVI.NoActionBar">
+
         </activity>
         <activity
             android:name=".ViewVehicleDetails"
@@ -39,16 +51,13 @@
         <activity
             android:name=".Home"
             android:label="Home"
-            android:theme="@style/Theme.SLVI.NoActionBar" />
+            android:theme="@style/Theme.SLVI.NoActionBar" >
+
+        </activity>
         <activity
             android:name=".SignUp"
             android:label="Sign Up"
-            android:theme="@style/Theme.SLVI.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:theme="@style/Theme.SLVI.NoActionBar">
         </activity>
     </application>
 

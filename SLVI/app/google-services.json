@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "842423838251",
+    "firebase_url": "https://slvi-45077-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "slvi-45077",
+    "storage_bucket": "slvi-45077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842423838251:android:a8053d3f97a7a6cd93ec6e",
+        "android_client_info": {
+          "package_name": "com.example.slvi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842423838251-0mkbtot0qrpnroo8u1fh29lrvp94irii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChsOFRgIjzpAZYRgB4SFK5L37biwQp6c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842423838251-0mkbtot0qrpnroo8u1fh29lrvp94irii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

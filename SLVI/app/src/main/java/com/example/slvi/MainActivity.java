@@ -1,10 +1,13 @@
 package com.example.slvi;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.slvi.databinding.ActivityHomeBinding;
+import com.example.slvi.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -21,6 +24,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewStub;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
@@ -28,17 +33,53 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    ViewStub stub;
-    View inflated;
+    LinearLayout imgVD;
+    LinearLayout imgRD;
+    LinearLayout imgOGV;
+    LinearLayout imgProfile;
+    View parent;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        stub = (ViewStub) findViewById(R.id.layout_stub);
-        stub.setLayoutResource(R.layout.activity_home);
-        inflated = stub.inflate();
+        parent = findViewById(R.id.parent_view);
+        imgVD = parent.findViewById(R.id.btn_vehicle_details);
+        imgVD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ViewVehicleDetails.class);
+                startActivity(intent);
+            }
+        });
+
+        imgRD = parent.findViewById(R.id.btn_revenue_details);
+        imgRD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RevenueDetails.class);
+                startActivity(intent);
+            }
+        });
+
+        imgOGV = parent.findViewById(R.id.btn_ongoing_details);
+        imgOGV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), OngoingVehicleNumber.class);
+                startActivity(intent);
+            }
+        });
+
+        imgProfile = parent.findViewById(R.id.btn_profile_details);
+        imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Profile.class);
+                startActivity(intent);
+            }
+        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -46,12 +87,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        //drawer.setDrawerListener(toggle);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override

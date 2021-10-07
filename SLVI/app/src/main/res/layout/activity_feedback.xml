@@ -46,7 +46,6 @@
                 app:srcCompat="@drawable/feedbacklogo" />
 
             <LinearLayout
-                android:id="@+id/btn_vehicle_details"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="17dp"
