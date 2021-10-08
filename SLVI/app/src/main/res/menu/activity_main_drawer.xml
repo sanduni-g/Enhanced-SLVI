@@ -20,6 +20,10 @@
             android:id="@+id/nav_on_going"
             android:icon="@drawable/navcar"
             android:title="On Going Number" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/navprof"
+            android:title="Your Profile" />
     </group>
 
     <item android:title="Communicate">

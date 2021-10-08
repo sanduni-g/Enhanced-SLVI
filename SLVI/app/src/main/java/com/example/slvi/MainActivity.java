@@ -11,6 +11,7 @@ import com.example.slvi.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
@@ -150,7 +151,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent i = new Intent(getApplicationContext(), OngoingVehicleNumber.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_feedback) {
+        } else if (id == R.id.nav_profile) {
+            Toast.makeText(getApplicationContext(), "Your Profile", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(), Profile.class);
+            startActivity(i);
+
+        }else if (id == R.id.nav_feedback) {
             Toast.makeText(getApplicationContext(), "Provide Feedback", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), Feedback.class);
             startActivity(i);
@@ -172,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Toast.makeText(getApplicationContext(), "Thank You for Using Our Service", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(getApplicationContext(), Login.class);
                             startActivity(i);
+                            FirebaseAuth.getInstance().signOut();
                         }
                     })
                     .setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {

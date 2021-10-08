@@ -26,9 +26,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class Login extends AppCompatActivity {
 
-    Button login;
     ActivityLoginBinding binding;
     FirebaseAuth firebaseAuth;
     private ProgressDialog loadingBar;
@@ -103,8 +104,11 @@ public class Login extends AppCompatActivity {
                                         finish();
 
                                     }else {
-
-                                        Toast.makeText(Login.this,"Login Failed",Toast.LENGTH_SHORT).show();
+                                        loadingBar.dismiss();
+                                        new SweetAlertDialog(Login.this, SweetAlertDialog.WARNING_TYPE)
+                                                .setTitleText("Login failed!")
+                                                .setContentText("Please check the login credentials")
+                                                .show();
 
                                     }
 
