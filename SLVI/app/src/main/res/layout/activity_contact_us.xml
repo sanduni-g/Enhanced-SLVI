@@ -119,6 +119,7 @@
 
 
             <EditText
+                android:id="@+id/msg_input"
                 android:inputType="textMultiLine"
                 android:lines="8"
                 android:minLines="1"
@@ -127,8 +128,8 @@
                 android:layout_height="wrap_content"
                 android:layout_width="290dp"
                 android:scrollbars="vertical"
-                android:layout_marginLeft="5dp"
-                android:hint="Write Your Message Here"></EditText>
+                android:layout_marginStart="5dp"
+                android:hint="Write Your Message Here" />
 
         </LinearLayout>
 

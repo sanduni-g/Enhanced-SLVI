@@ -27,13 +27,14 @@
                     app:srcCompat="@drawable/blackback"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="6dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Feedback Forum"
                     android:textSize="30dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"></TextView>
+                    android:layout_marginTop="20dp" />
 
 
             </LinearLayout>
@@ -127,6 +128,7 @@
 
 
                     <EditText
+                        android:id="@+id/msg_input"
                         android:inputType="textMultiLine"
                         android:lines="8"
                         android:minLines="1"
@@ -137,7 +139,7 @@
                         android:scrollbars="vertical"
                         android:layout_marginLeft="10dp"
                         android:hint="Write Your Message Here"
-                        android:layout_marginTop="5dp"></EditText>
+                        android:layout_marginTop="5dp" />
 
                 </LinearLayout>
 
