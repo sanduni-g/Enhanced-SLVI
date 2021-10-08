@@ -139,7 +139,7 @@ public class Feedback extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 new SweetAlertDialog(Feedback.this, SweetAlertDialog.SUCCESS_TYPE)
                                         .setTitleText("Successfully Submitted")
-                                        .setContentText("We will look into your problem as soon as possible.")
+                                        .setContentText("Thank you for sharing your valuable feedback.")
                                         .show();
                                 resetData();
                             }else {
