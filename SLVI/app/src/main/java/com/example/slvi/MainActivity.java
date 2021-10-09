@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     LinearLayout imgOGV;
     LinearLayout imgProfile;
     View parent;
+    public String navigationPage;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
 
@@ -51,7 +52,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ViewVehicleDetails.class);
-                startActivity(intent);
+                navigationPage = "ViewVehicleDetails";
+                Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+                if(navPageValidity){
+                    startActivity(intent);
+                }
             }
         });
 
@@ -60,7 +65,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RevenueDetails.class);
-                startActivity(intent);
+                navigationPage = "RevenueDetails";
+                Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+                if(navPageValidity){
+                    startActivity(intent);
+                }
             }
         });
 
@@ -69,7 +78,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), OngoingVehicleNumber.class);
-                startActivity(intent);
+                navigationPage = "OngoingVehicleNumber";
+                Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+                if(navPageValidity){
+                    startActivity(intent);
+                }
             }
         });
 
@@ -78,7 +91,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Profile.class);
-                startActivity(intent);
+                navigationPage = "Profile";
+                Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+                if(navPageValidity){
+                    startActivity(intent);
+                }
             }
         });
 
@@ -139,32 +156,56 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_vehicle_details) {
             Toast.makeText(getApplicationContext(), "Vehicle Details", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), ViewVehicleDetails.class);
-            startActivity(i);
+            navigationPage = "ViewVehicleDetails";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         } else if (id == R.id.nav_revenue_details) {
             Toast.makeText(getApplicationContext(), "Revenue Details", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), RevenueDetails.class);
-            startActivity(i);
+            navigationPage = "RevenueDetails";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         } else if (id == R.id.nav_on_going) {
             Toast.makeText(getApplicationContext(), "On Going Number", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), OngoingVehicleNumber.class);
-            startActivity(i);
+            navigationPage = "OngoingVehicleNumber";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         } else if (id == R.id.nav_profile) {
             Toast.makeText(getApplicationContext(), "Your Profile", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), Profile.class);
-            startActivity(i);
+            navigationPage = "Profile";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         }else if (id == R.id.nav_feedback) {
             Toast.makeText(getApplicationContext(), "Provide Feedback", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), Feedback.class);
-            startActivity(i);
+            navigationPage = "Feedback";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         } else if (id == R.id.nav_contact) {
             Toast.makeText(getApplicationContext(), "Contact Us", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getApplicationContext(), ContactUs.class);
-            startActivity(i);
+            navigationPage = "ContactUs";
+            Boolean navPageValidity = MainActivityNavigationTest(navigationPage);
+            if(navPageValidity){
+                startActivity(i);
+            }
 
         } else if (id == R.id.nav_logout) {
             new SweetAlertDialog(MainActivity.this, SweetAlertDialog.WARNING_TYPE)
@@ -195,4 +236,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    public static Boolean MainActivityNavigationTest(String NavPageName){
+        if(NavPageName.equals("ViewVehicleDetails")){
+            return true;
+        }
+        else if(NavPageName.equals("RevenueDetails")){
+            return true;
+        }
+        else if(NavPageName.equals("OngoingVehicleNumber")){
+            return true;
+        }
+        else if(NavPageName.equals("Profile")){
+            return true;
+        }
+        else if(NavPageName.equals("Feedback")){
+            return true;
+        }
+        else if(NavPageName.equals("ContactUs")){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

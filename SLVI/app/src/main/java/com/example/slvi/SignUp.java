@@ -32,6 +32,7 @@ public class SignUp extends AppCompatActivity {
     ActivitySignUpBinding binding;
     Dialog dialog;
     private ProgressDialog loadingBar;
+    public String buttonClick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,11 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SignUp.this, Login.class);
-                startActivity(i);
+                buttonClick = "Login";
+                Boolean buttonClickValidity = buttonClickValidation(buttonClick);
+                if(buttonClickValidity){
+                    startActivity(i);
+                }
             }
         });
 
@@ -129,5 +134,13 @@ public class SignUp extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public static Boolean buttonClickValidation(String clickedButton){
+        if(clickedButton.equals("Login")){
+            return true;
+        }else{
+            return false;
+        }
     }
 }

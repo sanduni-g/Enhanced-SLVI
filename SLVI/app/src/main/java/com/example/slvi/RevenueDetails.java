@@ -45,7 +45,17 @@ public class RevenueDetails extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please Enter the Vehicle Number First", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    readData(vehicleNumber);
+                    int len = vehicleNumber.length();
+                    Boolean vehicleNumberValidity = vehicleNumberValidation(len);
+                    if(!vehicleNumberValidity){
+                        new SweetAlertDialog(RevenueDetails.this, SweetAlertDialog.WARNING_TYPE)
+                                .setTitleText("Please check the vehicle number again")
+                                .setContentText("EX: CAA-7845")
+                                .show();
+                        resetData();
+                    }else{
+                        readData(vehicleNumber);
+                    }
                 }
             }
         });
@@ -63,11 +73,12 @@ public class RevenueDetails extends AppCompatActivity {
 
                 }
                 else{
-                    new SweetAlertDialog(RevenueDetails.this, SweetAlertDialog.WARNING_TYPE)
-                            .setTitleText("Please check the vehicle number again")
-                            .setContentText("EX: CAA-7845")
-                            .show();
-                    resetData();
+                    Toast.makeText(getApplicationContext(), "No Details available for this vehicle number", Toast.LENGTH_SHORT).show();
+//                    new SweetAlertDialog(ViewVehicleDetails.this, SweetAlertDialog.WARNING_TYPE)
+//                            .setTitleText("Please check the vehicle number again")
+//                            .setContentText("EX: CAA-7845")
+//                            .show();
+//                    resetData();
                 }
             }
 
@@ -82,5 +93,13 @@ public class RevenueDetails extends AppCompatActivity {
         binding.issuedDate.setText("");
         binding.expiryDate.setText("");
         binding.licenseNumber.setText("");
+    }
+
+    public static Boolean vehicleNumberValidation(int vehicleNumLength){
+        if(vehicleNumLength <= 6 ){
+            return false;
+        }else{
+            return true;
+        }
     }
 }

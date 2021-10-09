@@ -50,7 +50,17 @@ public class ViewVehicleDetails extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please Enter the Vehicle Number First", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    readData(vehicleNumber);
+                    int len = vehicleNumber.length();
+                    Boolean vehicleNumberValidity = vehicleNumberValidation(len);
+                    if(!vehicleNumberValidity){
+                        new SweetAlertDialog(ViewVehicleDetails.this, SweetAlertDialog.WARNING_TYPE)
+                                .setTitleText("Please check the vehicle number again")
+                                .setContentText("EX: CAA-7845")
+                                .show();
+                        resetData();
+                    }else{
+                        readData(vehicleNumber);
+                    }
                 }
             }
         });
@@ -71,11 +81,12 @@ public class ViewVehicleDetails extends AppCompatActivity {
                     binding.chassisNumber.setText(snapshot.child("chassisNumber").getValue().toString());
                 }
                 else{
-                    new SweetAlertDialog(ViewVehicleDetails.this, SweetAlertDialog.WARNING_TYPE)
-                            .setTitleText("Please check the vehicle number again")
-                            .setContentText("EX: CAA-7845")
-                            .show();
-                    resetData();
+                    Toast.makeText(getApplicationContext(), "No Details available for this vehicle number", Toast.LENGTH_SHORT).show();
+//                    new SweetAlertDialog(ViewVehicleDetails.this, SweetAlertDialog.WARNING_TYPE)
+//                            .setTitleText("Please check the vehicle number again")
+//                            .setContentText("EX: CAA-7845")
+//                            .show();
+//                    resetData();
                 }
             }
 
@@ -95,5 +106,13 @@ public class ViewVehicleDetails extends AppCompatActivity {
         binding.model.setText("");
         binding.yom.setText("");
         binding.chassisNumber.setText("");
+    }
+
+    public static Boolean vehicleNumberValidation(int vehicleNumLength){
+        if(vehicleNumLength <= 6 ){
+            return false;
+        }else{
+            return true;
+        }
     }
 }

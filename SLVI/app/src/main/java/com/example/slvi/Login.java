@@ -33,6 +33,7 @@ public class Login extends AppCompatActivity {
     ActivityLoginBinding binding;
     FirebaseAuth firebaseAuth;
     private ProgressDialog loadingBar;
+    public String buttonClick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,11 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Login.this, SignUp.class);
-                startActivity(i);
+                buttonClick = "SignUp";
+                Boolean buttonClickValidity = buttonClickValidation(buttonClick);
+                if(buttonClickValidity){
+                    startActivity(i);
+                }
             }
         });
         binding.forgotComPass.setOnClickListener(new View.OnClickListener() {
@@ -121,5 +126,13 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public static Boolean buttonClickValidation(String clickedButton){
+        if(clickedButton.equals("SignUp")){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
