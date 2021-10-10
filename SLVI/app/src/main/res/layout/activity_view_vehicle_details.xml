@@ -76,7 +76,7 @@ android:layout_height="match_parent">
             android:layout_marginRight="60dp"
             android:layout_marginLeft="40dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Vehicle Number (EX: CAA-xxxx)"
+            android:hint="Enter Vehicle Number (EX: CAA-1010)"
             android:inputType="text"
             android:textSize="15dp"/>
 
