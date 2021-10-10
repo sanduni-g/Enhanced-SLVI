@@ -46,7 +46,7 @@
             android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:label="MainActivity"
+            android:label="Home"
             android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".ViewVehicleDetails"

@@ -83,6 +83,7 @@ public class ViewVehicleDetails extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "No Details available for this vehicle number", Toast.LENGTH_SHORT).show();
+                    resetData();
                 }
             }
 
