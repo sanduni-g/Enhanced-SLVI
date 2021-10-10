@@ -67,8 +67,6 @@ public class SubmittedInquiry extends AppCompatActivity {
                             .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                                 @Override
                                 public void onClick(SweetAlertDialog sweetAlertDialog) {
-//                                    Intent intent = new Intent(getApplicationContext(), Profile.class);
-//                                    startActivity(intent);
                                     finish();
                                 }
                             })

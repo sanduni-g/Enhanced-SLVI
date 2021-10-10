@@ -30,7 +30,6 @@ public class SignUp extends AppCompatActivity {
 
     FirebaseAuth firebaseAuth;
     ActivitySignUpBinding binding;
-    Dialog dialog;
     private ProgressDialog loadingBar;
     public String buttonClick;
 
