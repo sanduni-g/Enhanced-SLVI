@@ -87,6 +87,37 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/cab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/cab_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/cab" />
+
+            <TextView
+                android:id="@+id/text_cab"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Cab"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/car"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,36 +179,7 @@
                 android:inputType="text"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/cab"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rounded_corner_white"
-            android:layout_marginTop="5dp">
 
-            <ImageView
-                android:id="@+id/cab_img"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginTop="5dp"
-                app:srcCompat="@drawable/cab" />
-
-            <TextView
-                android:id="@+id/text_cab"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_marginRight="60dp"
-                android:layout_marginLeft="70dp"
-                android:layout_height="wrap_content"
-                android:text="Cab"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:inputType="text"/>
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lorry"
