@@ -74,11 +74,6 @@ public class RevenueDetails extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "No Details available for this vehicle number", Toast.LENGTH_SHORT).show();
-//                    new SweetAlertDialog(ViewVehicleDetails.this, SweetAlertDialog.WARNING_TYPE)
-//                            .setTitleText("Please check the vehicle number again")
-//                            .setContentText("EX: CAA-7845")
-//                            .show();
-//                    resetData();
                 }
             }
 

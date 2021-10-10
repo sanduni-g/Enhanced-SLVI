@@ -114,7 +114,6 @@ public class Login extends AppCompatActivity {
                                                 .setTitleText("Login failed!")
                                                 .setContentText("Please check the login credentials")
                                                 .show();
-
                                     }
 
                                 }
