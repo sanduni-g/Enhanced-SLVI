@@ -54,7 +54,7 @@ public class SubmittedInquiry extends AppCompatActivity {
 
                     if (reply.equals("Pending Reply...")){
                         SweetAlertDialog alertDialog = new SweetAlertDialog(SubmittedInquiry.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE);
-                        alertDialog.setTitleText("Your Inquiry is still pending");
+                        alertDialog.setTitleText("Your Inquiry is still Pending");
                         alertDialog.setContentText("We are trying our best to get connected with you.");
                         alertDialog.setCustomImage(R.drawable.pending);
                         alertDialog.show();
