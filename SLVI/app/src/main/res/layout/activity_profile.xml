@@ -197,7 +197,7 @@
                         android:layout_height="60dp"
                         android:layout_marginStart="100dp"
                         android:background="@drawable/rosepetalsbtn"
-                        android:text="Inquiry"
+                        android:text="Submitted Inquiry"
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         app:backgroundTint="@color/cardview_shadow_end_color"
