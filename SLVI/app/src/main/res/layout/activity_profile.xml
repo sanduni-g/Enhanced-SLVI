@@ -7,11 +7,11 @@
     tools:context=".Profile"
     android:orientation="vertical">
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -164,6 +164,14 @@
                 android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your requirement is our priority.Please feel free to submit any concren you have regarding the app using the contact us form. Do not forget to provide your valueble feedback on us as well."
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginRight="20dp"/>
 
                 <RelativeLayout
                     android:layout_below= "@id/lay1454"
@@ -183,30 +191,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <Button
-                        android:id="@+id/btn_prof_feedback"
+                        android:id="@+id/btn_inquiry"
                         android:layout_width="150dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_centerInParent="true"
+                        android:layout_marginStart="100dp"
                         android:background="@drawable/rosepetalsbtn"
-                        android:text="Feedback"
+                        android:text="Inquiry"
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         app:backgroundTint="@color/cardview_shadow_end_color"
                         app:backgroundTintMode="add"/>
                 </LinearLayout>
-                <Button
-                    android:id="@+id/btn_prof_contactus"
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/rosepetalsbtn"
-                    android:text="Contact us"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    app:backgroundTint="@color/cardview_shadow_end_color"
-                    app:backgroundTintMode="add"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

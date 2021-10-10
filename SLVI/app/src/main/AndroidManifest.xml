@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SLVI">
-        <activity android:name=".Profile"
-            android:label="Profile"
+        <activity
+            android:name=".SubmittedInquiry"
+            android:label="Submitted Inquiry"
             android:theme="@style/Theme.SLVI.NoActionBar"/>
+        <activity
+            android:name=".Profile"
+            android:label="Profile"
+            android:theme="@style/Theme.SLVI.NoActionBar">
+        </activity>
         <activity
             android:name=".RevenueDetails"
             android:label="Revenue Details"
@@ -19,12 +25,11 @@
         <activity
             android:name=".OngoingVehicleNumber"
             android:label="Ongoing Vehicle Number"
-            android:theme="@style/Theme.SLVI.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".Login"
             android:label="Login"
-            android:theme="@style/Theme.SLVI.NoActionBar" >
+            android:theme="@style/Theme.SLVI.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,9 +39,7 @@
         <activity
             android:name=".Feedback"
             android:label="Feedback Forum"
-            android:theme="@style/Theme.SLVI.NoActionBar" >
-
-        </activity>
+            android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".ContactUs"
             android:label="Contact Us"
@@ -44,9 +47,7 @@
         <activity
             android:name=".MainActivity"
             android:label="MainActivity"
-            android:theme="@style/Theme.SLVI.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".ViewVehicleDetails"
             android:label="Vehicle Details"
@@ -54,14 +55,11 @@
         <activity
             android:name=".Home"
             android:label="Home"
-            android:theme="@style/Theme.SLVI.NoActionBar" >
-
-        </activity>
+            android:theme="@style/Theme.SLVI.NoActionBar" />
         <activity
             android:name=".SignUp"
             android:label="Sign Up"
-            android:theme="@style/Theme.SLVI.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.SLVI.NoActionBar" />
     </application>
 
 </manifest>

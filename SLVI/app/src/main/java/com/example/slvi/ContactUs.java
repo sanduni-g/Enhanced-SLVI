@@ -46,7 +46,7 @@ public class ContactUs extends AppCompatActivity {
                 String name = binding.nameInput.getText().toString();
                 String email = binding.emailinput.getText().toString();
                 String message = binding.msgInput.getText().toString();
-                String reply ="";
+                String reply ="Pending Reply...";
 
                 if(TextUtils.isEmpty(name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(message)){
                     Toast.makeText(getApplicationContext(), "Please fill all the fields", Toast.LENGTH_SHORT).show();
@@ -67,7 +67,6 @@ public class ContactUs extends AppCompatActivity {
                                         .show();
                                 resetData();
                             }else {
-                                //Toast.makeText(ContactUs.this, "Submission Failed. Please try again", Toast.LENGTH_SHORT).show();
                                 new SweetAlertDialog(ContactUs.this, SweetAlertDialog.WARNING_TYPE)
                                         .setTitleText("Something Went Wrong")
                                         .setContentText("Submission Failed. Please try again later.")
@@ -76,23 +75,6 @@ public class ContactUs extends AppCompatActivity {
                         }
                     });
                 }
-
-//                new SweetAlertDialog(ContactUs.this, SweetAlertDialog.WARNING_TYPE)
-//                        .setTitleText("Are you sure?")
-//                        .setContentText("You are Going to Submit this with Empty Fields")
-//                        .setConfirmText("Yes,Submit it!")
-//                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-//                            @Override
-//                            public void onClick(SweetAlertDialog sDialog) {
-//                                sDialog
-//                                        .setTitleText("Submitted!")
-//                                        .setContentText("Your Inquiry has been submitted!")
-//                                        .setConfirmText("OK")
-//                                        .setConfirmClickListener(null)
-//                                        .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
-//                            }
-//                        })
-//                        .show();
             }
         });
 

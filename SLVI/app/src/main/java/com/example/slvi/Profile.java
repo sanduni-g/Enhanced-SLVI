@@ -56,20 +56,14 @@ public class Profile extends AppCompatActivity {
         binding.imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-            }
-        });
-        binding.btnProfFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Feedback.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
             }
         });
-        binding.btnProfContactus.setOnClickListener(new View.OnClickListener() {
+        binding.btnInquiry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), ContactUs.class);
+                Intent i = new Intent(getApplicationContext(), SubmittedInquiry.class);
                 startActivity(i);
             }
         });
